@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         department = $("department").value
 
 // GET THE LOGINDETAILS OUTPUT ELEMENT FROM THE PARENT PAGE
-        var parentoutput = window.opener.document.getElementById('logindetails')
+        var parentoutput = window.opener.document.getElementById('loginDetails')
         
 
 // // SET THE TEXT OF THE LOGINDETAILS ELEMENT TO THE ABOVE SET VARIABLES
