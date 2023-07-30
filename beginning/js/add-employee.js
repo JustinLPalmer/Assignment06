@@ -12,7 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const $ = (bringDOM) => document.getElementById(bringDOM)
 
 // HANDLE THE CANCEL BUTTON. WHEN THE USER CLICKS THIS BUTTON, CLOSE THE WINDOW
-    $('cancel').addEventListener('click', window.close)
+    let cancel = $('cancel')
+    cancel.addEventListener('click', () => {
+    window.close()
+})
 
 // HANDLE THE SUBMISSION OF THE FORM AND THEN IMMEDIATELY PREVENT THE SUBMISSION
     document.getElementById("empForm").addEventListener("submit", (event) => {
